@@ -80,7 +80,7 @@ public FirstMod() {
 
 ## Assets
 
-In your project folder go to `src/main/resources` and make a new folder called assets, in that make one called your modid and in that ones called lang, models, and textures. In the textures folder make a folder called items and in that put a png image to use for your item in game. In the models folder make a folder called item.
+In your project folder go to `src/main/resources` and make a new folder called assets, in that make one called your modid and in that ones called lang, models, and textures. In the textures folder make a folder called item and in that put a png image to use for your item in game. In the models folder make a folder called item.
 
 In the lang folder make a new file called en_us.json This is where we tell it how to display the names for our item and item group in game. Make sure to change firstmod to your modid and smile to your item name.
 
@@ -98,7 +98,7 @@ Then in `models/item` make a file called item_name.json (replace item_name with 
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "firstmod:items/smile"
+        "layer0": "firstmod:item/smile"
     }
 } 
 ```
@@ -111,10 +111,10 @@ src/main
         - lang/
             - en_us.json
         - models/
-            - item
+            - item/
                 - item_name.json
         - textures/
-            - items/
+            - item/
                 - item_name.png
     - java/com/name/modname/
         - ModNameMain.java
